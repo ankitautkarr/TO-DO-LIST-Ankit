@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri&display=swap');
+
+.App{
+	color: white;
+}
+.styling{
+	font-weight: 800;
+	color : lime;
+}
+
+h1{
+	color: #fff;
+	font-size: 3rem;
+	font-weight: 50;
+	text-align: center;
+	margin: 1rem 0 3rem; 
+	font-family: 'Hind Siliguri', sans-serif;
+}
+
+
+
+
+
+
+

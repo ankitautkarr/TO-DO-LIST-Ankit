@@ -1,0 +1,52 @@
+
+.inputDiv{
+	text-align: center;
+}
+
+.addButton:hover {
+	background-color: green;
+	color: white;	 
+}
+
+.addButton{
+	background-color: blue;
+	color: white;
+	font-weight: 100;
+	border-radius: 25px;
+	height: 40px;
+	outline: none;
+	border: none;
+	margin: 0.25rem;
+    transition: .5s;
+    font-size: 1.15rem;
+    padding: 10px;
+}
+
+
+.todoInput{
+	 border-radius: 25px;
+	 height: 20px;
+	 width: 25%;
+	 outline: none;
+	 border: none;
+	 margin: 0.25rem;
+     transition: .5s;
+     font-size: 1.15rem;
+     padding: 10px;
+}
+
+.date{
+	border-radius: 25px;
+	 height: 20px;	 
+	 outline: none;
+	 border: none;
+	 margin: 0.25rem;
+     transition: .5s;
+     font-size: 1.15rem;
+     padding: 10px;
+}
+.label1{
+	 font-size: 1.15rem;
+	 padding: 10px;
+}
+
