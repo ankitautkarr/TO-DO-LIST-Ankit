@@ -7,10 +7,10 @@
 }
 
 .button{
-	background-color: blue;
+	background-color: orange;
 	color: white;
 	font-weight: 100;
-	border-radius: 25px;
+	border-radius: 10px;
 	height: 40px;
 	outline: none;
 	border: none;
@@ -20,10 +20,10 @@
     padding: 10px;
 }
 .buttonAll{
-	background-color: blue;
+	background-color: orange;
 	color: white;
 	font-weight: 100;
-	border-radius: 25px;
+	border-radius: 10px;
 	height: 40px;
 	outline: none;
 	border: none;

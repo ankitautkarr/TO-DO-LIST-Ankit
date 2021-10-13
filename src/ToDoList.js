@@ -7,15 +7,19 @@ class ToDoList extends React.Component{
 	constructor(props){
 	super(props);  
 	this.state = {
-		todos: [], 		//todo array
-		todoToShow :'all',	// helper variable
-		ToggleAllComplete : true // helper variable to toggle state
+		todos: [], 		
+		todoToShow :'all',	
+		ToggleAllComplete : true 
 		
 		};
 
 	}
 
-	//this function add todo in todo array
+	changeName= (completeState) => {
+		const z = completeState? "Mark all Complete": "Mark all Incomplete"
+		return z
+	}
+
 	addTodo = todo => {
 		
 		this.setState({
@@ -23,7 +27,7 @@ class ToDoList extends React.Component{
 		})
 	}
 
-	//this function change the complete or not state in todo array
+
 	toggleCheckbox = (id) =>{
 		this.setState({
 			todos: this.state.todos.map(todo => {
@@ -41,7 +45,7 @@ class ToDoList extends React.Component{
 		})
 	}
 
-	//this function update helper variable 
+
 	updateTodoToShow = (s)=>{
 		this.setState({
 			todoToShow : s
@@ -49,14 +53,14 @@ class ToDoList extends React.Component{
 	}
 
 
-	// this function delete todo from todos array
+	
 	handleDelete = (id)=>{
 		this.setState({
 			todos : this.state.todos.filter(todo => todo.id !== id)
 		});
 	}
 
-	// this fuction delete all completed todo from todos array
+	
 	handleRemoveAllComplete = (id)=>{
 		this.setState({
 			todos : this.state.todos.filter(todo => !todo.complete)
@@ -64,11 +68,11 @@ class ToDoList extends React.Component{
 	}
 
 
-	// render function of react
+	
 	render(){
-		let todos = []; // temp helper variable
+		let todos = []; 
 
-		// this if else ladder filter all todos based on todoToShow variable
+	
 		if (this.state.todoToShow === 'all') {
 			todos = this.state.todos;
 		} else if(this.state.todoToShow === 'active'){
@@ -110,7 +114,7 @@ class ToDoList extends React.Component{
 			{this.state.todos.some(todo => todo.complete) ? (
 				<div>
 				<button className = "buttonAll" onClick = {this.handleRemoveAllComplete}>
-					RemoveAllCompletedTODO
+					Remove All Completed TASKS
 					</button>
 				</div>) : null
 			}
@@ -124,7 +128,7 @@ class ToDoList extends React.Component{
 					})),
 					ToggleAllComplete : !this.state.ToggleAllComplete
 				})}>
-				ToggleAllComplete : {`${this.state.ToggleAllComplete}`}</button>
+				{this.changeName(this.state.ToggleAllComplete)} </button>
 			</div>
 				
 			</div>

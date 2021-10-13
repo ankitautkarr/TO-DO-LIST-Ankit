@@ -12,12 +12,12 @@ class ToDoElement extends Component{
 			}
 		}
 	
-	// this function change checkbox value and call parent call back 
+	
 	handleChange = (event) =>{
 		this.props.toggleCheckbox(event);
 	}
 
-	// render function of react
+	
 	render(){
 
 			var tempDate = this.props.todo.date.toString();

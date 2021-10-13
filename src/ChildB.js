@@ -1,7 +1,7 @@
 import React from 'react'
 
 
-// LifeCycle methods - Class based Component 
+
 class ChildB extends React.Component{
 	constructor(props){
 		super(props);

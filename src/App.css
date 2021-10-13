@@ -1,11 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri&display=swap');
+
 
 .App{
 	color: white;
+	
 }
 .styling{
-	font-weight: 800;
-	color : lime;
+	font-weight: 500;
+	color : white;
 }
 
 h1{

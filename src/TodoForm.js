@@ -5,28 +5,28 @@ import "react-datepicker/dist/react-datepicker.css";
 import './TodoForm.css'
 
 class TodoForm extends React.Component{
-	// simple state variable local to this file only
+	
 	state = {
 		text:'',
 		desc:'',
 		startDate: new Date()
 	}
 
-	// this function set value of text and desc depends on name
+	
 	handleChange = (event) =>{
 		this.setState({
 			[event.target.name] : event.target.value
 		})
 	}
 
-	// this function set date
+	
 	handleChange2 = date => {
     this.setState({
       startDate: date
     });
   };
 
-  	// this function add value to todo and called parent call back function
+  	
 	handleSubmit = (event) => {
 		event.preventDefault();
 
@@ -49,7 +49,7 @@ class TodoForm extends React.Component{
 
 	}
 
-	// render function of react 
+
 	render(){
 
 		return(
